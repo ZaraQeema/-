@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全ての国名言えるかな？ゲーム</title>
+    <link rel="stylesheet" href="mission_6-2(2).css">
+</head>
+<body>
+    <h1>全ての国名言えるかな？</h1>
+    <div class="controls">
+        <select id="difficulty-select">
+            <option value="all">すべての国</option>
+            <option value="asia">アジア</option>
+            <option value="europe">ヨーロッパ</option>
+            <option value="africa">アフリカ</option>
+            <option value="america">南北アメリカ</option>
+            <option value="oceania">オセアニア</option>
+        </select>
+        <input type="text" id="country-input" placeholder="国名を日本語で入力" disabled>
+        <button id="start-end-btn">開始</button>
+    </div>
+    <div class="game-status">
+        <div id="timer">00:00</div>
+        <div class="score">正解数: <span id="correct-count">0</span> / <span id="total-count">0</span></div>
+    </div>
+    <div id="countries-list"></div>
+
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <div class="result-section">
+                <h2>ゲーム結果</h2>
+                <div id="current-result"></div>
+            </div>
+            <div class="result-section">
+                <h2>ベストスコア</h2>
+                <div id="best-score"></div>
+            </div>
+            <button id="close-modal">閉じる</button>
+        </div>
+    </div>
+
+    <script src="mission_6-2.js"></script>
+</body>
+</html>
